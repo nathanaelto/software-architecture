@@ -1,4 +1,4 @@
-package io.to.service;
+package io.to.application;
 
 public class MemberServiceException extends Exception{
     public MemberServiceException(String message) {

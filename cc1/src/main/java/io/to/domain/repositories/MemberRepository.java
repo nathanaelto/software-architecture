@@ -1,6 +1,6 @@
-package io.to.domain;
+package io.to.domain.repositories;
 
-import io.to.domain.Member;
+import io.to.domain.entities.Member;
 
 public interface MemberRepository {
     void save(Member member);

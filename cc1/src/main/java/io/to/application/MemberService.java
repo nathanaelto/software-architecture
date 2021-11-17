@@ -1,7 +1,8 @@
-package io.to.service;
+package io.to.application;
 
-import io.to.domain.Member;
-import io.to.domain.MemberRepository;
+
+import io.to.domain.entities.Member;
+import io.to.domain.repositories.MemberRepository;
 
 import org.apache.commons.validator.routines.EmailValidator;
 

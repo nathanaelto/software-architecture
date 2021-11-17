@@ -1,7 +1,7 @@
 package io.to.infrastructure;
 
-import io.to.domain.Member;
-import io.to.domain.MemberRepository;
+import io.to.domain.entities.Member;
+import io.to.domain.repositories.MemberRepository;
 
 public class JsonMemberRepository implements MemberRepository {
     @Override
