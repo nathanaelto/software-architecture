@@ -5,15 +5,16 @@ import io.to.application.exceptions.PasswordValidationException;
 import io.to.domain.dto.MemberDto;
 import io.to.domain.entities.Member;
 import io.to.domain.repositories.MemberRepository;
+import io.to.domain.services.MemberService;
 import org.apache.commons.validator.routines.EmailValidator;
 import org.springframework.stereotype.Service;
 
 @Service
-public class MemberService {
+public class MemberServiceImplem implements MemberService {
 
     private final MemberRepository memberRepository;
 
-    public MemberService(MemberRepository memberRepository) {
+    public MemberServiceImplem(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
 
