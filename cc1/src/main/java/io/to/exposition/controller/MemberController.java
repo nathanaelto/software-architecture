@@ -15,8 +15,12 @@ import javax.validation.Valid;
 @RequestMapping("/member")
 public class MemberController {
 
+    private final MemberService memberService;
+
     @Autowired
-    private MemberService memberService;
+    public MemberController(MemberService memberService) {
+        this.memberService = memberService;
+    }
 
     @PostMapping()
     public Member create(@Valid @RequestBody MemberDto memberDto) {
