@@ -7,7 +7,6 @@ import io.to.domain.entities.Member;
 import io.to.domain.repositories.MemberRepository;
 import io.to.domain.services.MemberService;
 import org.apache.commons.validator.routines.EmailValidator;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -20,7 +19,7 @@ public class MemberServiceImpl implements MemberService {
     }
 
     @Override
-    public Member register(MemberDto memberDto){
+    public Member register(MemberDto memberDto) {
         EmailValidator emailValidator = EmailValidator.getInstance();
         if (!emailValidator.isValid(memberDto.getEmail())) {
             throw new EmailValidationException();
