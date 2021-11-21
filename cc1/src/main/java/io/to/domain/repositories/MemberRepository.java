@@ -1,9 +1,9 @@
 package io.to.domain.repositories;
 
 import io.to.domain.entities.Member;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface MemberRepository {
-    void save(Member member);
-
-    void updatePassword(Member member);
+    Member save(Member member);
 }
